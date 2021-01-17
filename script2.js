@@ -5,13 +5,11 @@ var lowercase = "abcdefghijklmnopqrstuvwxyz".split("");
 var numbers = ("123456789").split("");
 var specCharacters = ("!@#$%^&").split("");
 var selectedCharacters = [];
-var password = [];
 var length;
 var passwordText = document.querySelector("#password");
-
+var password = [];
 function writePassword() {
-    passwordText.innerHTML = "Your Secure Password"
-
+    
     length = parseInt(prompt("Please select a length between 8 and 128 characters"))
     console.log(length);
     if (length < 8 || length > 128 || isNaN(length)) {
