@@ -60,12 +60,12 @@ passwordText.textContent = password
  
 
 //   //for loop 
-  // for (i = 0; i < passwordLength; i++) {
-  //   // produce a random lowercase letter 8 times 
-  //   var password =  password + selectedCharacters[Math.floor(math.random() * selectedCharacters.length)]
-  //   // add random letter to our password string var 
-  //   password = password + selectedCharacters[Math.floor(math.random() * selectedCharacters.length)]
-  // }
+  for (i = 0; i < passwordLength; i++) {
+    // produce a random lowercase letter 8 times 
+    var password =  password + selectedCharacters[Math.floor(math.random() * selectedCharacters.length)]
+    // add random letter to our password string var 
+    password = password + selectedCharacters[Math.floor(math.random() * selectedCharacters.length)]
+  }
 
 // }
 // Add event listener to generate button
