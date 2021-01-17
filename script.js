@@ -51,14 +51,7 @@ passwordText = document.querySelector("#password");
 console.log(password)
 passwordText.textContent = password
 
-
-
 }
-
-
-  
- 
-
 //   //for loop 
   for (i = 0; i < passwordLength; i++) {
     // produce a random lowercase letter 8 times 
