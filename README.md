@@ -1,18 +1,10 @@
 # passwordgenerator_week3 
 
+For this [password generator project](https://britaniwalley.github.io/passwordgenerator_week3/.), I went into the code that was provided to see if there was any functionality already available. My first course of action was to make a list of necessary variables to make the website function properly which I did by assessing the HTML provided for naming conventions and then searching W3Schools. 
 
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+After I found the proper variables, I started working out the functions. I decided that a writePassword and generatePassword function would both be required to achieve the right outcome of the code. Next, I put the if/else statements into the writePassword function to make sure that when prompted for password criteria, I could click through the options and my choices would be logged. After checking that these were working, I created the generatePassword function. 
+
+Inside the generatePassword function, I made sure all the criteria chosen by the user was being used in the password. To do this, I created a formula that included the array of the chosen characters. After this array was called, it was randomized to the length chosen by the user - the length of specific characters chosen ( ie: uppercase, lowercase, numbers, special characters). Once this was done, the password is generated and displayed in the secure password box. 
+
+
+![image](https://user-images.githubusercontent.com/74206593/104860812-346bbe80-58ea-11eb-9448-53ce8db55f45.png)
